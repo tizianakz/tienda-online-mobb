@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-family: "Goldman", sans-serif;
+    font-size: 10rem;
+    text-shadow: -2px -2px 0 #5B6D6F;
+}
+#intro {
+    height: 100vh;
+    background: url('../assets/img/background.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos del navbar */
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.navbar-scrolled {
+    background-color: #343a40 !important; /* Cambia al color oscuro cuando se hace scroll */
+}
+
+.navbar-transparent {
+    background-color: transparent !important; /* Navbar transparente */
+}
+
+li a{
+    text-decoration: none;
+}
+footer {
+    font-family: "Open Sans", sans-serif;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00ff00; /* Cambia el color a verde */
+}
+
+/* Estilo para los iconos de redes sociales */
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid palevioletred; /* Borde verde similar al de la imagen */
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: white; /* Color inicial del ícono */
+}
+
+.social-icon:hover {
+    background-color: pink; /* Fondo verde al hacer hover */
+    color: #000; /* Cambia el color del ícono al hacer hover */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del ícono al hacer hover */
+}
+
+.social-icon i {
+    transition: all 0.3s ease;
+}
+
+.social-icon i:hover {
+    color: #000; /* Cambia el color del ícono dentro del borde */
+}
+
+form .form-control {
+    border: none;
+    border-bottom: 2px solid #343a40;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+    border-bottom: 2px solid pink;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+form button[type="submit"] {
+    background-color: transparent;
+    border: solid 2px pink;
+}
+
+form button[type="submit"]:hover {
+    background-color: transparent;
+    border: solid 2px palevioletred;
+    transform: scale(1.05);
+}
+
+form {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Reseñas */
+#sectionRes {
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+/* Imagen del usuario */
+.carousel-item img {
+    object-fit: cover;
+    border: 3px solid #ddd;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+/* Estrellas de calificación */
+.star-rating i {
+    color: #ffc107; /* Dorado */
+    margin: 0 2px; /* Espaciado entre estrellas */
+    font-size: 1.5rem; /* Tamaño de las estrellas */
+}
+
+/* Controles del Carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Cambia el color de los controles a blanco */
+}
